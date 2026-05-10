@@ -14,7 +14,7 @@ Project ini adalah aplikasi web sederhana untuk mengelola data produk menggunaka
 - Python (bahasa pemrograman utama)
 - Flask (Framework backend/API)
 - SQLite (database)
-- Flask SQLAlchemy (penhubungan flask dengan database)
+- Flask SQLAlchemy (penghubung flask dengan database)
 - HTML (tampilan UI/frontend)
 - JavaScript (frontend dengan API)
   
