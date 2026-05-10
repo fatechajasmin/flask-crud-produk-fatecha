@@ -1,6 +1,6 @@
 # Aplikasi REST API Produk
 
-Project ini adalah aplikasi web sederhana untuk mengelola data produk menggunakan Flask dan SQLite.
+Project ini adalah aplikasi web sederhana untuk mengelola data produk menggunakan Flask dan SQLite (sebagai database).
 
 ## Fitur
 
@@ -11,24 +11,25 @@ Project ini adalah aplikasi web sederhana untuk mengelola data produk menggunaka
 
 ## Teknologi
 
-- Python
-- Flask
-- Flask SQLAlchemy
-- SQLite
-- HTML
-- JavaScript
-
+- Python (bahasa pemrograman utama)
+- Flask (Framework backend/API)
+- SQLite (database)
+- Flask SQLAlchemy (penghubung flask dengan database)
+- HTML (tampilan UI/frontend)
+- JavaScript (frontend dengan API)
+  
 ## Endpoint API
 
 | Method | Endpoint | Fungsi |
 |---|---|---|
-| GET | /api/produk | Menampilkan produk |
+| GET ALL | /api/produk |Menampilkan semua produk
+| GET BY ID | /api/produk/<id> | Menampilkan satu produk berdasarkan id |
 | POST | /api/produk | Menambah produk |
-| PUT | /api/produk/<id> | Mengubah produk |
+| PUT BY ID | /api/produk/<id> | Mengubah produk berdasarkan ID |
 | DELETE | /api/produk/<id> | Menghapus produk |
 
 ## Cara Menjalankan
 
 ```bash
-python app.py
+py app.py
 ```
