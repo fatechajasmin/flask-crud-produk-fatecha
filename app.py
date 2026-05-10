@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 
-# Membuat aplikasi Flask
+# Flask
 app = Flask(__name__)
 
 # Menghubungkan database SQLite
@@ -10,13 +10,13 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-# Membuat tabel produk
+# Tabel produk
 class Produk(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nama = db.Column(db.String(100), nullable=False)
     harga = db.Column(db.Integer, nullable=False)
 
-# Membuat database jika belum ada
+# Database
 with app.app_context():
     db.create_all()
 
